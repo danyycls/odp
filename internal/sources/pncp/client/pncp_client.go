@@ -65,7 +65,7 @@ func (p *PNCPClient) BuscarContratos(ctx context.Context, cnpj, dataInicial, dat
 		if err != nil {
 			return nil, err
 		}
-		req.Header.Set("User-Agent", "Liceu/1.0")
+		req.Header.Set("User-Agent", "Odp/1.0")
 		req.Header.Set("Accept", "application/json")
 
 		log.Info("PNCP: solicitando", "pagina", pagina, "tamanho", tamanho, "url", u.String(), "attempt", i)
@@ -171,7 +171,7 @@ func (p *PNCPClient) parsebuscarContratosResponse(ctx context.Context, params ma
 		if err != nil {
 			return nil, err
 		}
-		req.Header.Set("User-Agent", "Liceu/1.0")
+		req.Header.Set("User-Agent", "Odp/1.0")
 		req.Header.Set("Accept", "application/json")
 
 		log.Info("PNCP contratos: solicitando", "pagina", pagina, "url", u.String(), "attempt", i)

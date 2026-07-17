@@ -1,7 +1,7 @@
 openapi: "3.0.3"
 
 info:
-  title: "LICEU API"
+  title: "ODP API"
   description: >
     API de analise e cruzamento de dados publicos brasileiros.
     Integra dados de multiplas fontes governamentais: TSE, TCU,
@@ -9,7 +9,7 @@ info:
     IBGE e SICONFI.
   version: "0.1.0"
   contact:
-    name: "LICEU"
+    name: "ODP"
     url: "https://github.com/danyele/podp"
 
 servers:
